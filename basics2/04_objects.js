@@ -43,9 +43,35 @@ const users = [
 ]
 // console.log(users[0].email);
 
-console.log(instauser);
-console.log(Object.keys(instauser));
-console.log(Object.values(instauser));
-console.log(Object.entries(instauser));
+// console.log(instauser);
+// console.log(Object.keys(instauser));
+// console.log(Object.values(instauser));
+// console.log(Object.entries(instauser));
 
 // console.log(instauser.hasOwnProperty('isLoggedIn'))
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseteacher: "hitesh"
+}
+
+// console.log(course.courseteacher);
+// console.log(course["courseteacher"]);
+
+const {courseteacher: teacher} = course
+// console.log(courseteacher);
+console.log(teacher);
+
+// {
+//     "name":"mahak",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
