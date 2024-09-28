@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    border:1px solid black;
+    background-color: lightgray;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    width: 100px;
+    background-color: lightgrey;
+}
+nav a:hover,
+nav a:focus{
+    background-color: rgb(200, 200, 200);
+}
+span {
+  display: block;
+}
+.canvas {
+  margin: 100px auto 100px;
+  width: 80%;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 1px;
+  display: inline-block;
+}
+
+#grey {
+  background: grey;
+}
+
+#white {
+  background: white;
+}
+#blue {
+  background: blue;
+}
+#yellow {
+  background: yellow;
+}
+#pink {
+  background: pink;
+}
