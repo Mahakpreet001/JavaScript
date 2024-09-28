@@ -18,8 +18,5 @@ btn.forEach(function(btn){
     else if(event.target.id==='yellow'){
         body.style.backgroundColor = "yellow"
     }
-    else if(event.target.id==='pink'){
-        body.style.backgroundColor = "pink"
-    }
     })
 })
