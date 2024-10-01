@@ -1,0 +1,30 @@
+<!-- 
+Default
+Javascript : this is a Synchronous language
+            and single threaded language(slow) but never feels
+
+Execution Context : 
+        execute one line of code at a time
+     |
+     |-----console.log(one)
+     |
+     |-----console.log(two)
+     |
+    \ /
+  CALL STACK
+
+-->
+<!--
+
+Blocking Code:
+        while the code is running or reading the file it can not do anything else.
+        { READ FILE SYNC }
+
+Non-blocking Code:
+        while the code is running or reading the file it can continue running other code.
+        { READ FILE ASYNC }
+
+        but it is maybe some time not good 
+        for eg:- we made a function to register data of user and while the data of the user in loading and the other line of code tells that the data is successfully loaded but it may give error in loading but the successfull message is allready given, so it is not good some time
+
+-->
