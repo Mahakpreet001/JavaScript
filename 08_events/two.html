@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi Baby!!</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayname = function(){
+        console.log('Hello, how are you?');
+    }
+    const changetext = function(){
+        document.querySelector('h1').innerHTML = "Fuck You!"
+    }
+    const changeme = setTimeout(changetext,3000);                              // setTimeout is used to run the event once
+    // setTimeout(sayname,3000);
+
+    document.querySelector('#stop').addEventListener('click',function(){        //to stop the running timeout function 
+        clearTimeout(changeme);
+        document.querySelector('h1').style.color = 'red';
+    })
+</script>
+</html>
