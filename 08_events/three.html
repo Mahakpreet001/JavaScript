@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project to run and stop the function</title>
+</head>
+<body>
+    <h1>Hello World!!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const time = function(str){          //here str value is taken from the setInterval function
+        // console.log(str,Date.now());
+    // }
+    // const intervalid = setInterval(time, 1000,"The time is ");
+    
+    // clearInterval(intervalid)
+    
+
+    let time;
+    var start = function(){
+        let date = new Date();
+        time = setInterval(function(){
+            console.log(date.toLocaleTimeString());
+        },1000)
+    }
+    document.querySelector('#start').addEventListener('click',start);
+    
+    var stop = function(){
+        clearInterval(time);
+    }
+    document.querySelector('#stop').addEventListener('click', stop);
+
+    
+</script>
+</html>
