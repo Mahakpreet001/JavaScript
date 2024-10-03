@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>API</title>
+</head>
+<body>
+    hello how are you ? 
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/Mahakpreet001';
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET",requesturl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText);                //JSON.parse this converts the data(jo api se aaya hai vo sting ki form me aa geyea) from string to data
+            console.log(data);
+            console.log(data.followers);
+            console.log(data);
+        }
+    }
+    xhr.send();
+
+</script>
+</html>
